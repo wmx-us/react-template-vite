@@ -2,7 +2,7 @@ import { ConfigEnv, defineConfig, loadEnv, UserConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import checker from 'vite-plugin-checker'
 import legacy from '@vitejs/plugin-legacy'
-import eslintPlugin from 'vite-plugin-eslint'
+// import eslintPlugin from 'vite-plugin-eslint'
 import { viteMockServe } from 'vite-plugin-mock'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { createStyleImportPlugin, AntdResolve } from 'vite-plugin-style-import'
@@ -34,7 +34,7 @@ export default defineConfig( (mode: ConfigEnv): UserConfig => {
           }
         }
       }),
-      eslintPlugin(),
+      // eslintPlugin(),
       createStyleImportPlugin({
         resolves: [AntdResolve()]
       }),
